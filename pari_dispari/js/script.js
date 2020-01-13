@@ -7,7 +7,8 @@
 
 
 var sceltaUtente = prompt('Pari o Dispari?');
-while (sceltaUtente.length == 0) {
+
+while (sceltaUtente.length == 0 || sceltaUtente != 'Dispari' && sceltaUtente != 'Pari') {
     var sceltaUtente = prompt('Devi scrivere Pari o Dispari.');
 }
 
