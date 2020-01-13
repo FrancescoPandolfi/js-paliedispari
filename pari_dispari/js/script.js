@@ -7,7 +7,15 @@
 
 
 var sceltaUtente = prompt('Pari o Dispari?');
+while (sceltaUtente.length == 0) {
+    var sceltaUtente = prompt('Devi scrivere Pari o Dispari.');
+}
+
 var numeroUtente = parseInt(prompt('Tira un numero da 1 a 5.'));
+while (isNaN(numeroUtente)) {
+    var numeroUtente = parseInt(prompt('Devi inserire un numero da 1 a 5.'));
+}
+
 var numeroRandom = Math.floor(Math.random() * 5 + 1);
 var somma = numeroUtente + numeroRandom;
 
