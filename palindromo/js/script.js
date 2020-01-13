@@ -2,6 +2,9 @@
 
 
 var parola = prompt('Scrivi una parola per scoprire se è palindromo.');
+while (parola.length <= 1) {
+    var parola = prompt('Devi Scrivere una parola per scoprire se è palindromo.');
+}
 
 console.log(reverseString(parola));
 alert(reverseString(parola));
